@@ -1,6 +1,6 @@
 # MIT 8103 Advanced Database Systems: University Results Portal
 
-**Working summary draft - add your name and personalize the reflection before submission**  
+**Working summary draft - review the reflection and course-specific assumptions before submission**  
 **Student:** Oluwasola Mokoore Joshua  
 **Student email:** m.oluwasola1098@miva.edu.ng  
 **Date:** 15 November 2026
@@ -35,7 +35,7 @@ Read replicas are the first proposed scaling step for periods when transcript tr
 
 ## Technical reflection - personalize before submitting
 
-The plan comparison showed me that adding an index does not automatically make every query faster. With a one-row table, PostgreSQL correctly kept the sequential scan, and the tiny timing difference was too small to support a broad claim. The transaction exercise made the effect of a row lock concrete: the second update could not proceed until the first transaction committed. I also saw the value of resetting the synthetic score after experimenting, so the original example remained consistent. Finally, the relational and document examples highlighted a trade-off between enforcing consistency across related records and returning a pre-assembled transcript quickly. Before submitting, I will personalize this reflection and verify any course-specific instructions in the LMS.
+I liked the relational schema design used in this project. I am still building my understanding of transaction handling, and I would like more practice explaining how commit, rollback, and row locks affect updates. This work showed me that I need to keep learning and practicing these ideas so I can explain them with more confidence. Before submitting, I will check that this reflection matches my experience and verify any course-specific instructions in the LMS.
 
 ## Evidence, references, and AI-use declaration
 

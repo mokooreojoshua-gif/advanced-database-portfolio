@@ -24,7 +24,7 @@
 
 ## Report and submission
 - [x] Prepare the summary draft with observed results, references, and an AI-use declaration.
-- [ ] Add the student's name and personalize/review the individual technical reflection.
+- [ ] Review and approve the individual technical reflection draft; edit any wording that does not match the student's experience.
 - [ ] Optional: add a PostgreSQL schema execution screenshot. Current evidence already covers the ERD, weighted result, foreign keys, transaction/concurrency, query plans, and MongoDB work; no additional screenshot is needed to continue preparing the draft.
 - [x] Create the local portfolio repository and make an initial snapshot commit.
 - [ ] Create a private GitHub repository, continue with progressive commits, and verify assessor access.
