@@ -1,7 +1,8 @@
 # MIT 8103 Advanced Database Systems: University Results Portal
 
 **Working summary draft - add your name and personalize the reflection before submission**  
-**Student:** [Student name]  
+**Student:** Oluwasola Mokoore Joshua  
+**Student email:** m.oluwasola1098@miva.edu.ng  
 **Date:** 15 November 2026
 
 ## Case study and purpose
