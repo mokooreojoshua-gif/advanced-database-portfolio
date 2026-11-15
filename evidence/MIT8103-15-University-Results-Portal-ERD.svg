@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#64748b"/></marker></defs>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:30px;font-weight:700}.sub{font-size:15px;fill:#475569}.card{fill:#fff;stroke:#94a3b8;stroke-width:2;rx:12}.head{fill:#e0f2fe;stroke:#38bdf8;stroke-width:1.5;rx:10}.tbl{font-size:18px;font-weight:700}.field{font-size:14px}.pk{font-weight:700;fill:#075985}.fk{fill:#7c3aed}.edge{fill:none;stroke:#64748b;stroke-width:2;marker-end:url(#arrow)}.rel{font-size:12px;fill:#334155;paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}.legend{font-size:13px;fill:#475569}</style>
+<rect width="1400" height="1000" fill="#f8fafc"/>
+<text x="700" y="48" text-anchor="middle" class="title">University Results Portal — Relational ER Diagram</text>
+<text x="700" y="76" text-anchor="middle" class="sub">PostgreSQL • keys, relationships, and cardinality • synthetic academic records</text>
+<!-- relationship connectors behind entities -->
+<path class="edge" d="M260 165 H350"/><text class="rel" x="300" y="153" text-anchor="middle">1 : many</text>
+<path class="edge" d="M550 165 H640"/><text class="rel" x="595" y="153" text-anchor="middle">1 : many</text>
+<path class="edge" d="M160 250 V355"/><text class="rel" x="172" y="308">1 : many</text>
+<path class="edge" d="M160 250 V320 H1120 V250"/><text class="rel" x="640" y="312" text-anchor="middle">1 : many</text>
+<path class="edge" d="M260 425 H600 V595 H650"/><text class="rel" x="430" y="414" text-anchor="middle">1 : many</text>
+<path class="edge" d="M450 495 V505 H750 V525"/><text class="rel" x="570" y="500" text-anchor="middle">1 : many</text>
+<path class="edge" d="M1120 250 V390 H850 V525"/><text class="rel" x="965" y="376" text-anchor="middle">1 : many</text>
+<path class="edge" d="M850 595 H930 V775 H980"/><text class="rel" x="892" y="585" text-anchor="middle">1 : many</text>
+<path class="edge" d="M740 250 V320 H900 V775 H980"/><text class="rel" x="908" y="480">1 : many</text>
+<path class="edge" d="M650 595 H600 V815 H570"/><text class="rel" x="578" y="690">1 : many</text>
+<path class="edge" d="M980 775 H920 V885 H850"/><text class="rel" x="912" y="760" text-anchor="middle">1 : many</text>
+<path class="edge" d="M570 815 H610 V885 H650"/><text class="rel" x="610" y="805" text-anchor="middle">1 : many</text>
+<!-- cards -->
+<g transform="translate(60 110)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">DEPARTMENTS</text><text class="field pk" x="14" y="64">PK department_id</text><text class="field" x="14" y="88">name (unique)</text></g>
+<g transform="translate(350 110)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">PROGRAMMES</text><text class="field pk" x="14" y="64">PK programme_id</text><text class="field fk" x="14" y="88">FK department_id</text><text class="field" x="14" y="112">name, award_level</text></g>
+<g transform="translate(640 110)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">STUDENTS</text><text class="field pk" x="14" y="64">PK student_id</text><text class="field fk" x="14" y="88">FK programme_id</text><text class="field" x="14" y="112">name, email, year</text></g>
+<g transform="translate(1020 110)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">LECTURERS</text><text class="field pk" x="14" y="64">PK lecturer_id</text><text class="field fk" x="14" y="88">FK department_id</text><text class="field" x="14" y="112">name, email</text></g>
+<g transform="translate(60 355)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">COURSES</text><text class="field pk" x="14" y="64">PK course_id</text><text class="field fk" x="14" y="88">FK department_id</text><text class="field" x="14" y="112">title, credit_units</text></g>
+<g transform="translate(350 355)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">SEMESTERS</text><text class="field pk" x="14" y="64">PK semester_id</text><text class="field" x="14" y="88">academic_year</text><text class="field" x="14" y="112">term</text></g>
+<g transform="translate(650 525)"><rect class="card" width="200" height="140"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">COURSE_OFFERINGS</text><text class="field pk" x="14" y="64">PK offering_id</text><text class="field fk" x="14" y="88">FK course_id, semester_id</text><text class="field fk" x="14" y="112">FK lecturer_id</text></g>
+<g transform="translate(980 700)"><rect class="card" width="220" height="150"/><rect class="head" width="220" height="38"/><text class="tbl" x="110" y="26" text-anchor="middle">ENROLLMENTS</text><text class="field pk" x="14" y="64">PK, FK student_id</text><text class="field pk fk" x="14" y="88">PK, FK offering_id</text><text class="field" x="14" y="112">registered_at, status</text></g>
+<g transform="translate(350 740)"><rect class="card" width="220" height="150"/><rect class="head" width="220" height="38"/><text class="tbl" x="110" y="26" text-anchor="middle">ASSESSMENTS</text><text class="field pk" x="14" y="64">PK assessment_id</text><text class="field fk" x="14" y="88">FK offering_id</text><text class="field" x="14" y="112">title, max_score, weight</text></g>
+<g transform="translate(650 820)"><rect class="card" width="200" height="130"/><rect class="head" width="200" height="38"/><text class="tbl" x="100" y="26" text-anchor="middle">SCORES</text><text class="field pk fk" x="14" y="64">PK, FK student + offering</text><text class="field pk fk" x="14" y="88">PK, FK assessment + offering</text><text class="field" x="14" y="112">score_value</text></g>
+<text x="60" y="970" class="legend"><tspan class="pk">PK</tspan> = primary key • <tspan class="fk">FK</tspan> = foreign key • A score is constrained to the same student's enrollment and offering's assessment.</text>
+</svg>

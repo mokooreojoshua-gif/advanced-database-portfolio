@@ -27,12 +27,14 @@ INSERT INTO enrollments (student_id, offering_id, status)
 VALUES (1001, 1, 'Enrolled');
 
 INSERT INTO assessments (offering_id, title, max_score, weight_percent)
-VALUES (1, 'Continuous Assessment', 30, 30),
-       (1, 'Examination', 70, 70);
+VALUES (1, 'Continuous Assessment', 30, 40),
+       (1, 'Examination', 70, 60);
 
 INSERT INTO scores (student_id, offering_id, assessment_id, score_value)
 VALUES (1001, 1, 1, 25.50),
-       (1001, 1, 2, 57.00);
+       (1001, 1, 2, 56.58);
 
 -- Expected weighted total for this invented sample: 82.50 out of 100.
 -- This is sample data, not a result from a real student or a live system.
+
+

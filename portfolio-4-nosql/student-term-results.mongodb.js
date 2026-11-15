@@ -17,8 +17,8 @@ db.student_term_results.insertOne({
       creditUnits: 3,
       finalPercent: 82.5,
       assessments: [
-        { name: "CA", score: 25.5, maxScore: 30, weightPercent: 30 },
-        { name: "Examination", score: 57, maxScore: 70, weightPercent: 70 }
+        { name: "CA", score: 25.5, maxScore: 30, weightPercent: 40 },
+        { name: "Examination", score: 56.58, maxScore: 70, weightPercent: 60 }
       ]
     }
   ]
@@ -34,3 +34,4 @@ db.student_term_results.createIndex(
   { studentId: 1, academicYear: 1, term: 1 },
   { unique: true }
 );
+

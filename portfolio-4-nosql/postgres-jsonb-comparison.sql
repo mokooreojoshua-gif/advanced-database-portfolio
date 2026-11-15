@@ -12,8 +12,8 @@ WITH term_result AS (
         "creditUnits": 3,
         "finalPercent": 82.5,
         "assessments": [
-          {"name": "CA", "score": 25.5, "maxScore": 30, "weightPercent": 30},
-          {"name": "Examination", "score": 57, "maxScore": 70, "weightPercent": 70}
+          {"name": "CA", "score": 25.5, "maxScore": 30, "weightPercent": 40},
+          {"name": "Examination", "score": 56.58, "maxScore": 70, "weightPercent": 60}
         ]
       }]
     }'::jsonb AS doc
@@ -31,3 +31,4 @@ FROM term_result
 CROSS JOIN LATERAL jsonb_array_elements(doc->'courses') AS course
 CROSS JOIN LATERAL jsonb_array_elements(course->'assessments') AS assessment
 ORDER BY assessment->>'name';
+
