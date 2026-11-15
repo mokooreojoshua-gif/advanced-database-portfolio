@@ -23,9 +23,11 @@
 - [x] Clearly state that no cloud resources, replicas, or shards were deployed.
 
 ## Report and submission
-- [ ] Complete and review the 2-3 page summary and individual technical reflection.
-- [ ] Add references and the required AI-use declaration.
-- [ ] Create a private GitHub repository, commit progressively, and verify assessor access.
+- [x] Prepare the summary draft with observed results, references, and an AI-use declaration.
+- [ ] Add the student's name and personalize/review the individual technical reflection.
+- [ ] Save screenshots of PostgreSQL schema/results, query plans, transactions/concurrency, and MongoDB document/query/index evidence.
+- [x] Create the local portfolio repository and make an initial snapshot commit.
+- [ ] Create a private GitHub repository, continue with progressive commits, and verify assessor access.
 - [ ] Upload the required files through the LMS yourself and confirm the submission.
 
 Never include database passwords, tokens, or live student information in the repository.
