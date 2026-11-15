@@ -1,0 +1,18 @@
+{
+  "_id": "student-1001-term-2026-27-first",
+  "studentId": 1001,
+  "academicYear": "2026/2027",
+  "term": "First",
+  "courses": [
+    {
+      "courseId": "MIT8103",
+      "title": "Advanced Database Systems",
+      "creditUnits": 3,
+      "finalPercent": 82.5,
+      "assessments": [
+        { "name": "CA", "score": 25.5, "maxScore": 30, "weightPercent": 30 },
+        { "name": "Examination", "score": 57, "maxScore": 70, "weightPercent": 70 }
+      ]
+    }
+  ]
+}

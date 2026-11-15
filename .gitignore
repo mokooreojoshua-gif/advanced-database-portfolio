@@ -1,0 +1,9 @@
+# Local-only credentials and transient database files
+.env
+.env.*
+*.pem
+*.key
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
